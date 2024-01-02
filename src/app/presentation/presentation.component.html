@@ -1,0 +1,11 @@
+<div class="container">
+  <div class="list-container side">
+    <ul class="list">
+      <li *ngFor="let data of messages" class="item">{{ data.message }}</li>
+    </ul>
+  </div>
+  <div class="text-container side">
+    <input type="text" placeholder="i need text" [(ngModel)]="text" class="text">
+    <button (click)="onClick()" class="button">Click here!</button>
+  </div>
+</div>
